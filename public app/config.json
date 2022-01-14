@@ -1,0 +1,11 @@
+{
+    "params": {
+        "local_server": "True",
+        "local_uri": "mysql://root:@localhost/GeminiTeens",
+        "prod_uri": "mysql://root:@localhost/GeminiTeens",
+        "no_of_items": 4, //desired number of items to display in 1 page
+        "SECRET_KEY": "the random string", //any string
+        "gmail-user": "your gmail id",
+        "gmail-password": "your gmail password"
+    }
+}

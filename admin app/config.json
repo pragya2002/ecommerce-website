@@ -1,0 +1,10 @@
+{
+    "params": {
+        "local_server": "True",
+        "local_uri": "mysql://root:@localhost/GeminiTeens",
+        "prod_uri": "mysql://root:@localhost/GeminiTeens",
+        "admin_username": "thisisadmin", //choose any admin name
+        "admin_password": "123456", //choose any password
+        "SECRET_KEY": "the random string" //choose any random string
+    }
+}

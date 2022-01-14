@@ -1,0 +1,108 @@
+
+
+
+
+.rr
+{
+  position: relative;
+  right:60px;
+  width:1440px;
+
+}
+.mas{
+  background-color: rgb(247, 231, 232);
+  position: fixed;
+  width:1440px;
+  margin: auto;
+  height:120px;
+}
+
+#ii{
+  position: relative;
+  bottom: 95px;
+  left: 110px;
+  margin: auto;
+  width:1440px
+}
+.d-flex{
+  position: relative;
+  right: 150px;
+
+}
+
+.footer-copyright{
+  text-align: center;
+}
+body{
+  background-color: white;
+}
+.acc{
+  width: 50%;
+  height: 250px;
+  background-color: grey;
+  text-align: center;
+
+}
+#hh{
+  width: 234px;
+}
+#ty{
+  position: relative;
+  bottom:380px;
+  left: 320px;
+  height: 380px;
+
+
+}
+#ry
+{
+  position: relative;
+
+  bottom:760px;
+  left: 640px;
+  height: 380px;
+
+}
+#wy{
+  position: relative;
+
+  bottom:1140px;
+  left:960px;
+  height: 380px;
+}
+#hy{
+  position: relative;
+
+  height: 380px;
+
+}
+
+
+#cont{
+
+  position: relative;
+  left:30px;
+  position: fixed;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+.hea{
+  background-image: url("wholesale fashion accessories.jpeg");
+
+}
+#o{
+  margin-left: 230px;
+  margin-top: 90px;
+  border-style: solid;
+  border-width: thin;
+  border-color: gray;
+}
+#oo{
+  margin-left: 270px;
+  margin-right: 30px;
+  margin-top: 60px;
+  border-style: solid;
+  border-width: thin;
+  border-color: gray;
+  width: 900px;
+}

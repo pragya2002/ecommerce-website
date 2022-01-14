@@ -1,0 +1,70 @@
+{% extends 'layout.html' %}
+  {% block body %}
+    <div class="hea">
+      <h1 class="text-center" >SIGN UP</h1>
+
+    </div>
+    <div class="container" id="oo">
+      <br>
+      <form action="/signup" method="post">
+        <div class="form-group row">
+          <label for="inputfirst3" class="col-sm-2 col-form-label" >Full Name:</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control" id="inputfirst3" placeholder="Enter your full name" name="name">
+          </div>
+        </div>
+        <br>
+        <div class="form-group row">
+          <label for="inputlast3" class="col-sm-2 col-form-label">Phone Number:</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control" id="inputlast3" placeholder="Enter your phone number" name="phone">
+          </div>
+        </div>
+        <br>
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Username:</label>
+      <div class="col-sm-6">
+        <input type="username" class="form-control" id="inputEmail3" placeholder="Username" name="username">
+      </div>
+
+    </div>
+    <br>
+    <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Password:</label>
+      <div class="col-sm-6">
+        <input type="password" class="form-control" id="inputPassword3" placeholder="Create a password" name="password">
+      </div>
+    </div>
+  <br>
+
+
+
+<br><br>
+
+    <div class="form-group row">
+      <div class="col-sm-6">
+        <button type="submit" class="btn btn-primary">Create an account</button>
+      </div>
+    </div>
+  </form>
+{% with messages = get_flashed_messages()%}
+             {% if messages %}
+{% for message in messages %}
+
+
+<div class="alert alert-danger alert-dismissible fade show" style="margin-bottom:-10px;margin-top:10px;">
+  
+    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+  {{message}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+{% endfor %}
+{% endif %}
+{% endwith %}
+  <br>
+    </div>
+
+  </body>
+</html>
+ {% endblock %}

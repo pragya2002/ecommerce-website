@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+     {% block body %}
+<div class="hea">
+      <h1 class="text-center" >FEEDBACK FORM</h1>
+
+    </div>
+    <div class="container" id="oo">
+      <form action="/feedback" method="post">
+        <br>
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Email:</label>
+      <div class="col-sm-6">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="email">
+      </div>
+
+    </div>
+    <br>
+    <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Phone Number:</label>
+      <div class="col-sm-6">
+        <input type="" class="form-control" id="inputPassword3" placeholder="Phone Number" name="phone">
+      </div>
+    </div>
+  <br>
+  <div class="form-group row">
+    <label for="inputtext3" class="col-sm-2 col-form-label">Last Purchase:</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="inputtext3" placeholder="Recent purchase/ purchases" name="last">
+    </div>
+  </div>
+  <br>
+    <div class="form-group row">
+      <label for="inputfeed3" class="col-sm-2 col-form-label">Your Feedback:</label>
+      <div class="col-sm-6">
+        <textarea placeholder="What do you think about us?"  rows="6" cols="48" name="feedback"> </textarea>
+      </div>
+    </div>
+    {% with messages = get_flashed_messages()%}
+             {% if messages %}
+{% for message in messages %}
+
+
+<div class="alert alert-success alert-dismissible fade show" style="margin-bottom:-30px;margin-top:5px;">
+  
+    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+  {{message}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+
+{% endfor %}
+{% endif %}
+{% endwith %}
+<br><br>
+
+    <div class="form-group row">
+      <div class="col-sm-6">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
+  <br>
+    </div>
+<br>
+  </body>
+</html>
+  {% endblock %}

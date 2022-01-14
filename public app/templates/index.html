@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+ {% block body %}
+ {% with messages = get_flashed_messages()%}
+             {% if messages %}
+{% for message in messages %}
+
+
+<div class="alert alert-success alert-dismissible fade show" style="margin-bottom:-50px;">
+  
+    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+  {{message}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+{% endfor %}
+{% endif %}
+{% endwith %}
+      <img src="{{url_for("static",filename="assets/img/sale.jpg")}}" alt="" width="1440">
+      <img src="{{url_for("static",filename="assets/img/210106_IE_55_Desktop.jpg")}}" alt="" width="1440">
+      <a href="/sports"> <img src="{{url_for("static",filename="assets/img/210113_US_Second_Desktop.gif")}}" alt="" width="1440"></a>
+
+    <a href="/sports"><img src="{{url_for("static",filename="assets/img/210113_US_Desktop_Primary.jpeg")}}" alt="" width="1440"></a>
+
+<br><br><br>
+<nav class="navbar fixed-bottom navbar-light bg-dark" style="height:110px">
+  <a class="navbar-brand" href="#"><img alt="Payment Icons" src="https://www.nastygal.com/on/demandware.static/-/Library-Sites-nastygal-content-global/default/dwaf8183ba/images/payment-method-icons/2020_UK_Footer_Strips.png" title=""></a>
+<div class="footer-copyright" style="color:white;">Copyright © 2021 GeminiTeens.com Ltd. All rights reserved. <span class="new-line">See our <a href="" title="Terms of use">terms of use</a> and <a href="" title="Privacy policy">privacy notice</a>.</span></div>
+</nav>
+
+
+
+  </body>
+</html>
+ {% endblock %}

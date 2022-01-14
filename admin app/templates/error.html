@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+ {% block body %}
+{%set b=url_for("static",filename="assets/img/error.png")%}
+<div style="position: absolute;
+position: absolute;
+width: 371px;
+height: 119px;
+left:40%;
+top: 183px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 47px;
+
+color: #887573;">
+    You need to log in to access this page!
+
+    <img src="{{url_for("static",filename="assets/img/h.png")}}" style="position: absolute;
+
+height: 200px;
+left: 7%;
+top: 200px;">
+</div>
+   </body>
+</html>
+ {% endblock %}

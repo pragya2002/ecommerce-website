@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+ {% block body %}
+
+
+
+<div class="container" id="cont">
+<div class="card" style="width: 300px;" id="hy">
+  <a href="/categories/accessories"><img class="card-img-top" src="{{url_for("static",filename="assets/img/wholesale fashion accessories.jpg")}}" alt="Card image cap"></a>
+
+
+<div class="card-body" >
+ <h5 class="card-title">ACCESSORIES </h5>
+  <p class="card-text">Some really chic accessories to enhance your style and give you the confidence you need!</p>
+</div>
+</div>
+
+<div class="card" style="width: 300px;" id="ty">
+  <a href="/categories/summer"><img class="card-img-top" src="{{url_for("static",filename="assets/img/summer-outfits-1-1591376238 .jpg")}}"  alt="Card image cap"></a>
+
+
+<div class="card-body" >
+  <h5 class="card-title">SUMMER WEAR</h5>
+  <p class="card-text">Get summer ready with our latest collection of summer wear!!</p>
+</div>
+</div>
+
+<div class="card" style="width: 300px;" id="ry">
+  <a href="/categories/winter"><img class="card-img-top" src="{{url_for("static",filename="assets/img/winter.jpg")}}" alt="Card image cap"></a>
+
+
+<div class="card-body" >
+  <h5 class="card-title">WINTER WEAR</h5>
+  <p class="card-text">Explore our wide range of winter wear to keep the cold out and fashion in!</p>
+</div>
+</div>
+
+
+<div class="card" style="width: 300px;" id="wy">
+    <a href="/categories/sports"><img class="card-img-top" src="{{url_for("static",filename="assets/img/feature.jpg")}}" alt="Card image cap"></a>
+
+
+<div class="card-body" >
+  <h5 class="card-title">SPORTS AND ATHLEISURE</h5>
+  <p class="card-text">Rock that sporty look cause girl, you got it!!</p>
+</div>
+</div>
+
+
+</div>
+
+
+  </body>
+</html>
+  {% endblock %}
